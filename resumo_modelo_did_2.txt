@@ -1,0 +1,87 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             log_m_rate   R-squared:                       0.993
+Model:                            OLS   Adj. R-squared:                  0.993
+Method:                 Least Squares   F-statistic:                     3831.
+Date:                Wed, 29 Nov 2023   Prob (F-statistic):               0.00
+Time:                        18:17:36   Log-Likelihood:                -1014.2
+No. Observations:                1677   AIC:                             2146.
+Df Residuals:                    1618   BIC:                             2467.
+Df Model:                          58                                         
+Covariance Type:            nonrobust                                         
+======================================================================================================
+                                         coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------
+Intercept                             -4.8972      0.066    -74.652      0.000      -5.026      -4.768
+C(year)[T.1936.0]                      0.0425      0.035      1.222      0.222      -0.026       0.111
+C(year)[T.1937.0]                      0.1076      0.022      4.921      0.000       0.065       0.151
+C(year)[T.1938.0]                     -0.0145      0.022     -0.663      0.507      -0.057       0.028
+C(year)[T.1939.0]                     -0.0671      0.022     -3.064      0.002      -0.110      -0.024
+C(disease)[T.2]                      -13.0714      0.041   -317.478      0.000     -13.152     -12.991
+C(disease)[T.3]                      -17.6161      0.041   -426.466      0.000     -17.697     -17.535
+C(disease)[T.4]                       -2.9952      0.030   -100.752      0.000      -3.053      -2.937
+C(disease)[T.5]                       -3.8441      0.030   -129.310      0.000      -3.902      -3.786
+C(disease)[T.6]                       -2.2354      0.030    -75.194      0.000      -2.294      -2.177
+C(disease)[T.7]                       -1.3760      0.030    -46.288      0.000      -1.434      -1.318
+C(is_pos37)[T.1]                       0.0261      0.026      1.009      0.313      -0.025       0.077
+C(treatment)[T.1]                      5.5535      0.020    283.932      0.000       5.515       5.592
+C(statenum)[T.Arizona]                 0.3208      0.108      2.975      0.003       0.109       0.532
+C(statenum)[T.Arkansas]               -0.1360      0.108     -1.261      0.207      -0.347       0.075
+C(statenum)[T.California]              0.2232      0.108      2.071      0.039       0.012       0.435
+C(statenum)[T.Colorado]                0.4503      0.108      4.177      0.000       0.239       0.662
+C(statenum)[T.Connecticut]             0.1099      0.108      1.019      0.308      -0.102       0.321
+C(statenum)[T.Delaware]                0.2915      0.108      2.704      0.007       0.080       0.503
+C(statenum)[T.Florida]                -0.0758      0.108     -0.703      0.482      -0.287       0.136
+C(statenum)[T.Georgia]                 0.0255      0.108      0.236      0.813      -0.186       0.237
+C(statenum)[T.Idaho]                   0.0813      0.108      0.754      0.451      -0.130       0.293
+C(statenum)[T.Illinois]                0.3792      0.108      3.517      0.000       0.168       0.591
+C(statenum)[T.Indiana]                 0.4014      0.108      3.723      0.000       0.190       0.613
+C(statenum)[T.Iowa]                    0.2325      0.108      2.156      0.031       0.021       0.444
+C(statenum)[T.Kansas]                  0.2613      0.108      2.424      0.015       0.050       0.473
+C(statenum)[T.Kentucky]                0.2686      0.108      2.491      0.013       0.057       0.480
+C(statenum)[T.Louisiana]               0.0802      0.108      0.744      0.457      -0.131       0.292
+C(statenum)[T.Maine]                   0.2859      0.109      2.632      0.009       0.073       0.499
+C(statenum)[T.Maryland]                0.2906      0.108      2.696      0.007       0.079       0.502
+C(statenum)[T.Massachusetts]           0.3249      0.108      3.014      0.003       0.113       0.536
+C(statenum)[T.Michigan]                0.2692      0.108      2.497      0.013       0.058       0.481
+C(statenum)[T.Minnesota]               0.2052      0.108      1.904      0.057      -0.006       0.417
+C(statenum)[T.Mississippi]            -0.1377      0.108     -1.278      0.202      -0.349       0.074
+C(statenum)[T.Missouri]                0.4007      0.108      3.716      0.000       0.189       0.612
+C(statenum)[T.Montana]                 0.3277      0.108      3.040      0.002       0.116       0.539
+C(statenum)[T.Nebraska]                0.1836      0.108      1.703      0.089      -0.028       0.395
+C(statenum)[T.Nevada]                  0.3755      0.109      3.457      0.001       0.162       0.589
+C(statenum)[T.New Hampshire]           0.3271      0.108      3.034      0.002       0.116       0.539
+C(statenum)[T.New Jersey]              0.1552      0.108      1.440      0.150      -0.056       0.367
+C(statenum)[T.New Mexico]              0.0607      0.108      0.563      0.573      -0.151       0.272
+C(statenum)[T.New York]                0.3117      0.108      2.891      0.004       0.100       0.523
+C(statenum)[T.North Carolina]         -0.0399      0.108     -0.370      0.712      -0.251       0.172
+C(statenum)[T.North Dakota]            0.1029      0.108      0.954      0.340      -0.109       0.314
+C(statenum)[T.Ohio]                    0.3612      0.108      3.350      0.001       0.150       0.573
+C(statenum)[T.Oklahoma]                0.0638      0.108      0.591      0.554      -0.148       0.275
+C(statenum)[T.Oregon]                  0.1803      0.108      1.673      0.095      -0.031       0.392
+C(statenum)[T.Pennsylvania]            0.3464      0.108      3.213      0.001       0.135       0.558
+C(statenum)[T.Rhode Island]            0.2872      0.109      2.645      0.008       0.074       0.500
+C(statenum)[T.South Carolina]         -0.0140      0.108     -0.130      0.897      -0.225       0.198
+C(statenum)[T.South Dakota]            0.1900      0.108      1.763      0.078      -0.021       0.401
+C(statenum)[T.Tennessee]               0.1381      0.108      1.281      0.200      -0.073       0.350
+C(statenum)[T.Texas]                   0.0618      0.108      0.574      0.566      -0.150       0.273
+C(statenum)[T.Utah]                    0.0737      0.108      0.684      0.494      -0.138       0.285
+C(statenum)[T.Vermont]                 0.3579      0.108      3.319      0.001       0.146       0.569
+C(statenum)[T.Virginia]                0.1395      0.108      1.294      0.196      -0.072       0.351
+C(statenum)[T.Washington]              0.2207      0.108      2.047      0.041       0.009       0.432
+C(statenum)[T.West Virginia]           0.1983      0.108      1.840      0.066      -0.013       0.410
+C(statenum)[T.Wisconsin]               0.2672      0.108      2.478      0.013       0.056       0.479
+C(statenum)[T.Wyoming]                 0.1448      0.108      1.343      0.179      -0.067       0.356
+C(is_pos37)[T.1]:C(treatment)[T.1]    -0.4436      0.045     -9.764      0.000      -0.533      -0.354
+treatment                              5.5535      0.020    283.932      0.000       5.515       5.592
+==============================================================================
+Omnibus:                      190.179   Durbin-Watson:                   2.219
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1694.274
+Skew:                          -0.058   Prob(JB):                         0.00
+Kurtosis:                       7.923   Cond. No.                     3.78e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 2.73e-28. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
